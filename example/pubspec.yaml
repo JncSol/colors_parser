@@ -1,0 +1,14 @@
+name: colors_parser_example
+description: Example of how to use colors_parser
+
+version: 1.0.0
+
+environment:
+sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  colors_parser:
+    path: ../

@@ -1,0 +1,19 @@
+name: colors_parser
+description: >-
+  A Material Colors parsing library. Parse MaterialColor and
+  MaterialAccentColor values with an optional indexed shade
+  as well as black and white variants and even hex values.
+version: 1.0.0
+author: Charles Esrock <chuck@jncsol.com>
+homepage: https://github.com/JncSol/colors_parser.git
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
