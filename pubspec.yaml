@@ -3,7 +3,7 @@ description: >-
   A Material Colors parsing library. Parse MaterialColor and
   MaterialAccentColor values with an optional indexed shade
   as well as black and white variants and even hex values.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/JncSol/colors_parser.git
 
 environment:
