@@ -11,7 +11,8 @@ class Context {
   ///
   /// If [colorsMap] is omitted, it uses the default English language
   /// colors map.
-  Context({Map<String, Color> colorsMap}) : colorsMap = colorsMap ?? colorsMapEN;
+  Context({Map<String, Color> colorsMap})
+      : colorsMap = colorsMap ?? colorsMapEN;
 
   /// The colors map that this context works with.
   final Map<String, Color> colorsMap;
@@ -36,7 +37,8 @@ class Context {
   Color parse(String source) {
     RegExpMatch match;
 
-    match = RegExp(r'^([a-zA-Z]+([0-9]{0,3}))(\[([0-9]{2,3})\])?$').firstMatch(source);
+    match = RegExp(r'^([a-zA-Z]+([0-9]{0,3}))(\[([0-9]{2,3})\])?$')
+        .firstMatch(source);
     if (match != null) {
       dynamic color = colorsMap[match.group(1)];
       if (color != null) {
@@ -83,7 +85,8 @@ class Context {
         if (entry.value is MaterialAccentColor) {
           MaterialAccentColor materialAccentColor = entry.value;
           for (var shade in [100, 200, 400, 700]) {
-            if (materialAccentColor[shade] == color) return '${entry.key}[$shade]';
+            if (materialAccentColor[shade] == color)
+              return '${entry.key}[$shade]';
           }
         }
       }
@@ -93,7 +96,6 @@ class Context {
     }
   }
 }
-
 
 /// Default English language colors map.
 final colorsMapEN = {
